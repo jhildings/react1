@@ -24,17 +24,15 @@ const findBook = (b) => {
       let bookExist = listedBooks.find(book => book.id === foundBook.id);
         if(bookExist){
           console.log('yes', foundBook.id)
-          foundBook.shelf = listedBooks[foundBook.id]
-        //  foundBooks.push(foundBook)
+      //    foundBook.shelf = listedBooks[foundBook.id]
+          foundBooks.push(foundBook)
         }
         else {
-         // foundBooks.push(foundBook)
+          foundBooks.push(foundBook)
           console.log('noo', foundBook)
         }
         foundBooks.push(foundBook)
-
-      setFbooks(foundBooks)
-
+     return setFbooks(foundBooks)
   });
   }
 

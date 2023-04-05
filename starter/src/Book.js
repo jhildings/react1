@@ -1,6 +1,8 @@
 import React from "react";
 
 const Book = ({ book, updateBookshelf }) => {
+
+  
   return (
           <div className="book">
             <div className="book-top">
@@ -26,7 +28,7 @@ const Book = ({ book, updateBookshelf }) => {
               </div>
             </div>
             <div className="book-title"><b>{book.title}</b></div>
-            <div className="book-authors"><b>{book.authors[0]}</b></div>
+            <div className="book-authors"><b>{book.authors ? book.authors[0] : "no author"}</b></div>
           </div>
   );
 }
